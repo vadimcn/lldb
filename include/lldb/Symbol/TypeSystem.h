@@ -73,6 +73,7 @@ public:
     eKindClang,
     eKindSwift,
     eKindOCaml,
+    eKindRust,
     kNumKinds
   };
 
