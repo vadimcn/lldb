@@ -1506,8 +1506,8 @@ lldb::CompUnitSP SymbolFilePDB::ParseCompileUnitForUID(uint32_t id,
   else
     lang = TranslateLanguage(details->getLanguage());
 
-  if (lang == lldb::LanguageType::eLanguageTypeUnknown)
-    return CompUnitSP();
+  // if (lang == lldb::LanguageType::eLanguageTypeUnknown)
+  //   return CompUnitSP();
 
   std::string path = compiland_up->getSourceFileFullPath();
   if (path.empty())
